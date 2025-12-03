@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import { AppSection } from "../types/nav";
+import { AppSection } from "../data/nav";
 import Image from "next/image";
 import clsx from "clsx";
 
