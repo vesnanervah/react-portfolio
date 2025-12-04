@@ -11,7 +11,7 @@ export default function AboutMeSection() {
 
 
 function FirstBloc() {
-    return <div className="min-w-[280px] max-w-[340px] md:max-w-[728px] lg:max-w-[440px] shrink">
+    return <div className="min-w-[280px] max-w-[340px] md:max-w-[728px] lg:max-w-[440px]">
         <div className="">
             <Image src={'/about-me-1.png'} alt="A photo of me" height={728} width={728}></Image>
         </div>
@@ -21,17 +21,18 @@ function FirstBloc() {
 }
 
 function SecondBloc() {
-    return <div className="min-w-[280px] max-w-[340px] md:max-w-[728px] lg:max-w-[440px] shrink">
+    return <div className="min-w-[280px] max-w-[340px] md:max-w-[728px] lg:max-w-[440px]">
         <div className={`text-base ${mulish.className} pb-10`}>I shoot all across Europe. I love natural light, genuine emotions, and beautiful details. Each shot is a small piece of art. My goal is to create timeless images that tell your unique story.</div>
         <div className="">
             <Image src={'/about-me-2.png'} alt="A photo of me" height={728} width={728}></Image>
         </div>
+        <div className={`bloc lg:hidden pt-10 text-base ${mulish.className}`}>Seeing with heart. Shooting with soul.</div>
     </div>
 }
 
 function ThirdBloc() {
-    return <div className="min-w-[280px] max-w-[340px]  md:max-w-[728px] lg:max-w-[440px] shrink">
-        <div className="hidden lg:block mb-10">
+    return <div className="hidden lg:block  min-w-[280px] max-w-[340px] md:max-w-[728px] lg:max-w-[440px]">
+        <div className="mb-10">
             <Image src={'/about-me-3.png'} alt="A photo of me" height={728} width={728}></Image>
         </div>
         <div className={`text-base ${mulish.className}`}>Seeing with heart. Shooting with soul.</div>
