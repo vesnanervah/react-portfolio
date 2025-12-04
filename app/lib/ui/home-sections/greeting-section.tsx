@@ -3,7 +3,7 @@ import ScrollDown from "../scroll-down"
 import { mulish } from "../fonts"
 
 export default function GreetingSection() {
-    return <div className="flex flex-col md:flex-row md:justify-between bg-stone-900 pl-5 pr-5 pb-14 text-white gap-5 md:gap-10">
+    return <div className="flex flex-col md:flex-row md:justify-center bg-stone-900 pl-5 pr-5 pb-14 text-white gap-5 md:gap-10">
         {FirstBlock()}
         {SecondBlock()}
         {ThirdBloc()}

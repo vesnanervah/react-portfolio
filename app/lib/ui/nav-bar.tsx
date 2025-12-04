@@ -45,6 +45,6 @@ function getLabelFromAppSection(section: AppSection) {
         case AppSection.Faq:
             return 'faq'    
         case AppSection.Contacts:
-            return 'conctacts'
+            return 'contacts'
     }
 }
