@@ -8,7 +8,7 @@ import clsx from "clsx";
 export default function NavBar() {
     const [mobileNavMenuVisible, setMobileNavMenuVisibility] = useState(false)
 
-    return <nav className="sticky top-0 right-0 bg-stone-800">
+    return <nav className="sticky top-0 right-0 bg-stone-900">
 
         <div className="flex justify-between ">
             <span className="p-5">
