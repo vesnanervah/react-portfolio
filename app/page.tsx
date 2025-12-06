@@ -5,6 +5,7 @@ import GreetingSection from "./lib/ui/home-sections/greeting-section"
 import { oswald } from "./lib/ui/fonts"
 import AboutMeSection from "./lib/ui/home-sections/about-me-section"
 import PorfolioSection from "./lib/ui/home-sections/portfolio-section"
+import PricingSection from "./lib/ui/home-sections/pricing-section"
 
 export default function Home() {
   return <div className={`${oswald.className}`}>
@@ -12,5 +13,6 @@ export default function Home() {
     <GreetingSection></GreetingSection>
     <AboutMeSection></AboutMeSection>
     <PorfolioSection></PorfolioSection>
+    <PricingSection></PricingSection>
   </div>
 }
