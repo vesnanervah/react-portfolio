@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { mulish } from "../fonts"
+import SectionHeader, { SectionHeaderColor } from "../section-header"
 
 export default function AboutMeSection() {
     return <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start gap-10 pl-5 pr-5 pt-15 pb-15 bg-white">
@@ -15,8 +16,9 @@ function FirstBloc() {
         <div className="">
             <Image src={'/about-me-1.png'} alt="A photo of me" height={728} width={728}></Image>
         </div>
-        <h3 className="text-3xl pt-10 pb-3">ABOUT ME</h3>
-        <div className={`text-base ${mulish.className}`}>Hi! I’m Vera, a photographer with 5 years of experience. For me, photography is more than just an image. It’s a way to feel the moment, capture the atmosphere, and freeze time. I work with people, stories, and emotions.</div>
+        <SectionHeader className="pt-10 pb-3" header="ABOUT ME" color={SectionHeaderColor.black}>
+            Hi! I’m Vera, a photographer with 5 years of experience. For me, photography is more than just an image. It’s a way to feel the moment, capture the atmosphere, and freeze time. I work with people, stories, and emotions.
+        </SectionHeader>
     </div>
 }
 

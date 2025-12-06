@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { GalleryImage, GalleryImageAlign, galleryImages } from "../../data/gallery-images";
-import { mulish } from "../fonts";
+import SectionHeader, { SectionHeaderColor } from "../section-header";
 
 export default function PorfolioSection() {
     return <div className="bg-stone-900 pt-15 pb-15">
@@ -10,14 +10,9 @@ export default function PorfolioSection() {
 }
 
     function Header() {
-        return <div className="pb-10">
-            <div className="pb-3 pl-5">
-                <h3 className="text-white text-3xl">MY PORTFOLIO</h3>
-            </div>
-            <div className={`${mulish.className} text-white text-base pl-5`}>
-                Every shoot is a story. Here you’ll find portraits,<br></br>love stories, family sessions, and more.
-            </div>
-        </div>
+        return <SectionHeader header="MY PORTFOLIO" color={SectionHeaderColor.white} className="pb-10 pl-5">
+            Every shoot is a story. Here you’ll find portraits,<br></br>love stories, family sessions, and more.
+        </SectionHeader>
     }
 
     function Gallery() {
