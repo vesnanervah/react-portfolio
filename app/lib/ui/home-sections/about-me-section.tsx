@@ -1,9 +1,10 @@
 import Image from "next/image"
 import { mulish } from "../fonts"
 import SectionHeader, { SectionHeaderColor } from "../section-header"
+import { AppSection } from "../../data/nav"
 
 export default function AboutMeSection() {
-    return <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start gap-10 pl-5 pr-5 pt-15 pb-15 bg-white">
+    return <div id={AppSection.About} className="flex flex-col items-center lg:flex-row lg:justify-center lg:items-start gap-10 pl-5 pr-5 pt-15 pb-15 bg-white">
         {FirstBloc()}
         {SecondBloc()}
         {ThirdBloc()}

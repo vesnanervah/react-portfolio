@@ -4,11 +4,12 @@ import { useState } from "react";
 import { AppSection } from "../data/nav";
 import Image from "next/image";
 import clsx from "clsx";
+import scrollToSection from "../utils/scroll-to-section";
 
 export default function NavBar() {
     const [mobileNavMenuVisible, setMobileNavMenuVisibility] = useState(false)
 
-    return <nav className="sticky top-0 right-0 bg-stone-900">
+    return <nav className="fixed z-10 top-0 right-0 bg-stone-900">
 
         <div className="flex justify-between ">
             <span className="p-5">
@@ -29,9 +30,13 @@ export default function NavBar() {
 }
 
 function NavItem(section: AppSection) {
-    return <button key={section} className="text-base text-white pl-5 pr-5 pt-4 pb-4 transition-colors duration-200 ease-in cursor-pointer hover:text-rose-600" onClick={/*TODO: navigation*/ () => {}}>
+    return <button key={section} className="text-base text-white pl-5 pr-5 pt-4 pb-4 transition-colors duration-200 ease-in cursor-pointer hover:text-rose-600" onClick={() => onNavClick(section)}>
         {getLabelFromAppSection(section).toUpperCase()}
     </button>
+}
+
+function onNavClick(section: AppSection) {
+    scrollToSection(section)
 }
 
 function getLabelFromAppSection(section: AppSection) {

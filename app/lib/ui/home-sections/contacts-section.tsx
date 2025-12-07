@@ -1,9 +1,10 @@
 import { Contact, contacts } from "../../data/contact";
+import { AppSection } from "../../data/nav";
 import Button from "../button";
 import TextField from "../text-field";
 
 export default function ContactsSection() {
-    return <div className="">
+    return <div id={AppSection.Contacts} className="">
         <div className="bg-white pt-10 pb-5">
             <div className="text-xl text-center text-stone-900 uppercase">
                 Like my portfolio? Sign up for a shoot!

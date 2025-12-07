@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { GalleryImage, GalleryImageAlign, galleryImages } from "../../data/gallery-images";
+import { AppSection } from "../../data/nav";
 import SectionHeader, { SectionHeaderColor } from "../section-header";
 
 export default function PorfolioSection() {
-    return <div className="bg-stone-900 pt-15 pb-15">
+    return <div id={AppSection.Portfolio} className="bg-stone-900 pt-15 pb-15">
         {Header()}
         {Gallery()}
     </div>
