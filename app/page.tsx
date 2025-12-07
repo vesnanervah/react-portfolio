@@ -6,6 +6,7 @@ import { oswald } from "./lib/ui/fonts"
 import AboutMeSection from "./lib/ui/home-sections/about-me-section"
 import PorfolioSection from "./lib/ui/home-sections/portfolio-section"
 import PricingSection from "./lib/ui/home-sections/pricing-section"
+import FaqSection from "./lib/ui/home-sections/faq-section"
 
 export default function Home() {
   return <div className={`${oswald.className}`}>
@@ -14,5 +15,6 @@ export default function Home() {
     <AboutMeSection></AboutMeSection>
     <PorfolioSection></PorfolioSection>
     <PricingSection></PricingSection>
+    <FaqSection></FaqSection>
   </div>
 }
