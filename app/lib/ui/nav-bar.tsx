@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AppSection } from "../data/nav";
 import Image from "next/image";
 import clsx from "clsx";
+import scrollToSection from "../utils/scroll-to-section";
 
 export default function NavBar() {
     const [mobileNavMenuVisible, setMobileNavMenuVisibility] = useState(false)
@@ -35,10 +36,7 @@ function NavItem(section: AppSection) {
 }
 
 function onNavClick(section: AppSection) {
-    const navBarHeight = 60;
-    const target = document.getElementById(section);
-    const scrollToTarget = target!.getBoundingClientRect().top + window.scrollY - navBarHeight;
-    window.scrollTo({top: scrollToTarget, behavior: "smooth"})
+    scrollToSection(section)
 }
 
 function getLabelFromAppSection(section: AppSection) {
