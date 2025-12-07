@@ -1,9 +1,10 @@
+import { AppSection } from "../../data/nav";
 import { pricing } from "../../data/pricing";
 import PricingCard from "../pricing-card";
 import SectionHeader, { SectionHeaderColor } from "../section-header";
 
 export default function PricingSection() {
-    return <div className="pl-5 pt-15 pr-5 pb-15 bg-white">
+    return <div id={AppSection.Price} className="pl-5 pt-15 pr-5 pb-15 bg-white">
         <SectionHeader header="Packages & Pricing" color={SectionHeaderColor.black} className="pb-10">
             Choose the package that suits your story. All options are customizable to your needs.
         </SectionHeader>

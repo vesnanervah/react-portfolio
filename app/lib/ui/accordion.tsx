@@ -9,7 +9,7 @@ export default function Accordion(props: AccordionProps) {
         <div className="flex justify-between items-center- text-xl cursor-pointer hover:text-rose-600 pb-2 pt-2 uppercase" onClick={props.onClick}>
             {props.faq.title}
             <div className="flex pt-4 pb-4">
-                <span className={clsx("h-1 w-4 bg-white relative transition-all duration-200", {
+                <span className={clsx("h-1 w-4 bg-white z-1 relative transition-all duration-200", {
                     "rotate-90 left-4": props.isOpened,
                     "rotate-0 left-4": !props.isOpened
                 })}></span>
