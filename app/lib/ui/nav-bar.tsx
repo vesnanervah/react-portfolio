@@ -18,7 +18,7 @@ export default function NavBar() {
                 {Object.values(AppSection).map(NavItem)}
             </span>
             <button onClick={() => setMobileNavMenuVisibility(!mobileNavMenuVisible)} className="inline md:hidden">
-                <Image src={mobileNavMenuVisible ? "/burger-opened.png" : "/burger-closed.png"} height={60} width={60} alt={mobileNavMenuVisible ? "close navigation button" : "open navigation button"}></Image>
+                <Image src={mobileNavMenuVisible ? `${process.env.NEXT_PUBLIC_BASE_PATH}/burger-opened.png` : `${process.env.NEXT_PUBLIC_BASE_PATH}/burger-closed.png`} height={60} width={60} alt={mobileNavMenuVisible ? "close navigation button" : "open navigation button"}></Image>
             </button>
         </div>
         
