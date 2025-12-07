@@ -11,7 +11,7 @@ export default function PricingCard(props: PricingCardProps) {
     function UpperBloc() {
         return <div>
             <div className="text-xl pb-3">{props.pricing.title}</div>
-            <ul className="list-[square]">
+            <ul className="list-[square] list-inside">
                 {props.pricing.properties.map((p) => {
                     return <li key={p} className={`${mulish.className} text-base`}>
                         {p}
