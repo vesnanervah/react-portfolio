@@ -21,7 +21,7 @@ export default function FaqSection() {
 
     function onFaqClick(f: Faq) {
         if (f.title == openedFaq?.title) {
-            return
+            return setOpenedFaq(null)
         }
         setOpenedFaq(f);
     }
