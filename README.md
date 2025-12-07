@@ -13,7 +13,6 @@ You can view the build [on Github Pages](https://vesnanervah.github.io/react-por
 #### TODO:
 
 - Fetch values of Photo sessions and satisfied clients
-- Scroll on NavLink and ScrollDown click
 - Carousel in MyPortfolio section
 - Simulate packages and pricings loading
 - Mock form in BookNow section
