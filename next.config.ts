@@ -16,6 +16,5 @@ const devConfig: NextConfig = {
 }
 
 const nextConfig: NextConfig = isProd ? prodConfig : devConfig;
-console.log(`Env: ${process.env.NODE_ENV}`);
 
 export default nextConfig;
