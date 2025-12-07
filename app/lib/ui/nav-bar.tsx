@@ -12,7 +12,7 @@ export default function NavBar() {
 
         <div className="flex justify-between ">
             <span className="p-5">
-                <Image src={"/heart.png"} height={20} width={20} alt="An image of heart"></Image>
+                <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/heart.png`} height={20} width={20} alt="An image of heart"></Image>
             </span>
             <span className="hidden md:inline">
                 {Object.values(AppSection).map(NavItem)}

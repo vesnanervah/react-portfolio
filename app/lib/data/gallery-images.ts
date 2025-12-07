@@ -7,51 +7,51 @@ export interface GalleryImage {
 
 export const galleryImages: Array<GalleryImage> = [
     {
-        src:'/gallery-image1.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image1.png`,
         alignClass: GalleryImageAlign.bottom
     },
     {
-        src:'/gallery-image2.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image2.png`,
         alignClass: GalleryImageAlign.center
     },
     {
-        src:'/gallery-image3.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image3.png`,
         alignClass: GalleryImageAlign.center
     },
     {
-        src:'/gallery-image4.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image4.png`,
         alignClass: GalleryImageAlign.top
     },
     {
-        src:'/gallery-image5.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image5.png`,
         alignClass: GalleryImageAlign.center
     },
     {
-        src:'/gallery-image6.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image6.png`,
         alignClass: GalleryImageAlign.center
     },
     {
-        src:'/gallery-image7.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image7.png`,
         alignClass: GalleryImageAlign.top
     },
     {
-        src:'/gallery-image8.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image8.png`,
         alignClass: GalleryImageAlign.bottom
     },
     {
-        src:'/gallery-image9.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image9.png`,
         alignClass: GalleryImageAlign.center
     },
     {
-        src:'/gallery-image10.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image10.png`,
         alignClass: GalleryImageAlign.top
     },
     {
-        src:'/gallery-image11.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image11.png`,
         alignClass: GalleryImageAlign.center
     },
     {
-        src:'/gallery-image12.png',
+        src:`${process.env.NEXT_PUBLIC_BASE_PATH}/gallery-image12.png`,
         alignClass: GalleryImageAlign.top
     },
 ];

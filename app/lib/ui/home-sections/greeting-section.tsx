@@ -58,14 +58,14 @@ function ScrollDownBlock() {
 
 function SecondBlock() {
     return <div className="hidden xl:block h-[220px] w-[220px] mt-72">
-        <Image src={"/img.png"} height={220} width={220} alt="An image of woman"></Image>
+        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img.png`} height={220} width={220} alt="An image of woman"></Image>
     </div>
 }
 
 function ThirdBloc() {
     return <div className="flex flex-col justify-end items-end lg:pt-8">
         <div className="h-[294px] w-[220px] lg:h-[374px] lg:w-[280px]">
-            <Image src="/picture.png" alt="A photo of woman" width={280} height={374}></Image>
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/picture.png`} alt="A photo of woman" width={280} height={374}></Image>
         </div>
         <div className={`w-[220px] pt-15 md:pt-72 text-right ${mulish.className}`}>
             Hi! I’m Vera, a photographer. For me, photography is more than just an image. 
