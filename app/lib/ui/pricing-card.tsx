@@ -23,8 +23,8 @@ export default function PricingCard(props: PricingCardProps) {
     }
     
     function BottomBlock() {
-        return <div>
-            <div className={`${mulish.className} text-base pb-3 italic`}>{props.pricing.description}</div>
+        return <div className="flex flex-col items-center gap-3">
+            <div className={`${mulish.className} text-base italic`}>{props.pricing.description}</div>
             <Button text="book now" onClick={() => {}}></Button>
         </div>
     }
