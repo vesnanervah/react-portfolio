@@ -34,7 +34,7 @@ export default function Gallery(props: GalleryProps) {
     </div>
 
     function Item(i: GalleryImage) {
-        return <div key={i.src} id={`gallery-image-${galleryImages.indexOf(i)}`} className={`flex flex-col h-p[654px] ${getAlignClassName(i)}`}>
+        return <div key={i.src} id={`gallery-image-${galleryImages.indexOf(i)}`} className={`flex flex-col ${getAlignClassName(i)}`}>
             <img src={i.src} alt="An photo from gallery"></img>
         </div>
     }
