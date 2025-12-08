@@ -24,7 +24,7 @@ export default function Gallery(props: GalleryProps) {
         </div>
 
         {/*Gestures area*/}
-        <div className="h-[654px] w-screen bottom-[654px] relative grid grid-cols-[3fr_4fr_3fr]">
+        <div className="min-h-[654px] w-screen bottom-[654px] relative grid grid-cols-[3fr_4fr_3fr]">
             <div className="min-h-max min-w-max" onClick={() => dispatchSliderPos(SliderMoveDirection.left)}></div>
             <div className="min-h-max min-w-max" onClick={() => dispatchSliderPos(SliderMoveDirection.initial)}></div>
             <div className="min-h-max min-w-max" onClick={() => dispatchSliderPos(SliderMoveDirection.right)}></div>
