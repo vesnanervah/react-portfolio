@@ -12,7 +12,7 @@ export default function Gallery(props: GalleryProps) {
     const [sliderPos, dispatchSliderPos] = useReducer(sliderPosReducer, sliderInitialPos);
 
 
-    return <div className={`w-screen overflow-hidden flex flex-col items-center ${props.className ?? ''}`}>
+    return <div className={`w-screen overflow-hidden flex flex-col items-center h-[654px] ${props.className ?? ''}`}>
 
         {/*Images area*/}
         <div id={slidableId} className={'w-max h-[654px] relative flex gap-5 pl-5 pr-5 shrink-0 transition-all duration-200'} style={{
