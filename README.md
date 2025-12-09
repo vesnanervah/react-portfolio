@@ -9,9 +9,3 @@ You can view the build [on Github Pages](https://vesnanervah.github.io/react-por
 - Typescript
 - Tailwind
 - NextJs
-
-#### TODO:
-
-- Simulate packages and pricings loading
-- Mock form in BookNow section
-- Links in footer
