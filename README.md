@@ -12,7 +12,6 @@ You can view the build [on Github Pages](https://vesnanervah.github.io/react-por
 
 #### TODO:
 
-- Fetch values of Photo sessions and satisfied clients
 - Simulate packages and pricings loading
 - Mock form in BookNow section
 - Links in footer
