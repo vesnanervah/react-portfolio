@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useReducer } from "react";
 import { GalleryImage, GalleryImageAlign, galleryImages } from "../data/gallery-images";
-import WindowSizeListener from "react-window-size-listener";
 
 const slidableId = "slidable"
 
@@ -30,7 +29,6 @@ export default function Gallery(props: GalleryProps) {
             <div className="min-h-max min-w-max" onClick={() => dispatchSliderPos(SliderMoveDirection.right)}></div>
         </div>
 
-        <WindowSizeListener onResize={onWindowResize}></WindowSizeListener>
     </div>
 
     function Item(i: GalleryImage) {
